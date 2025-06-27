@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths } from 'date-fns';
 import CalendarHeader from './CalendarHeader.jsx';
 import Day from './Day';
-import { getEventsForDay } from '../../utils/eventUtils';
+import { getEventsForDay } from '../../utils/eventUtils.js';
 
 export default function Calendar({ events, onAddEvent, onEditEvent, onDeleteEvent }) {
   const [currentMonth, setCurrentMonth] = useState(new Date());
