@@ -1,8 +1,17 @@
 // src/hooks/useCalendar.js
-import { useState } from 'react';
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths } from 'date-fns';
+import { useState } from "react";
+import {
+  format,
+  startOfMonth,
+  endOfMonth,
+  eachDayOfInterval,
+  isSameMonth,
+  isSameDay,
+  addMonths,
+  subMonths,
+} from "date-fns";
 
-export function useCalendar() {
+const useCalendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
   const monthStart = startOfMonth(currentMonth);
@@ -18,4 +27,6 @@ export function useCalendar() {
     nextMonth,
     prevMonth,
   };
-}
+};
+
+export default useCalendar;
