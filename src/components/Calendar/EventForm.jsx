@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { format, parseISO } from 'date-fns';
 import TimePicker from '../TimePicker';
 import RecurrenceOptions from '../RecurrenceOptions';
-import { checkEventConflict } from '../../utils/eventUtils';
+import { checkEventConflict } from '../../Utils/eventUtils';
 
 const colors = [
   { name: 'Blue', value: '#3b82f6' },
