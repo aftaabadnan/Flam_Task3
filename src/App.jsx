@@ -1,7 +1,7 @@
 // src/App.js
 import { useState } from "react";
 import Calendar from "./components/Calendar/Calendar";
-import { useLocalStorage } from "./hooks/useLocalStorage.js";
+import { useLocalStorage } from "./Hooks/useLocalStorage.js";
 import EventForm from "./components/Calendar/EventForm";
 function App() {
   const [events, setEvents] = useLocalStorage("calendarEvents", []);
