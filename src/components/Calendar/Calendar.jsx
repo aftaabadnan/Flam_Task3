@@ -12,7 +12,7 @@ import {
 } from "date-fns";
 import CalendarHeader from "./CalendarHeader.jsx";
 import Day from "./Day";
-import { getEventsForDay } from "../../utils/eventUtils.js";
+import { getEventsForDay } from "../../Utils/eventUtils.js";
 
 const Calendar = ({ events, onAddEvent, onEditEvent, onDeleteEvent }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
